@@ -1,0 +1,3 @@
+psql -U postgres -d postgres
+
+psql -f Åysqlï∂Åz -U postgres -d postgres
