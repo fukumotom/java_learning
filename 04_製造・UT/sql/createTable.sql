@@ -11,23 +11,23 @@ user_id serial NOT NULL  PRIMARY KEY
 
 create table UserRole
 (
-user_id serial NOT NULL  REFERENCES Users(user_id)
+user_id serial NOT NULL REFERENCES Users(user_id)
 ,role VARCHAR(5) NOT NULL
 );
 
 create table WorkManage
 (
-id serial REFERENCES Users(user_id)
-,startTime time(0)
-,endTime time(0)
-,workingTime time(0)
-,contents VARCHAR(20)
-,note VARCHAR(20)
-,worktime date
-,uptime timestamp
-,deleteFlg integer
-,updateFlg integer
-,insertFlg integer
+id serial NOT NULL
+,user_id integer NOT NULL
+,startTime time(0) NOT NULL
+,endTime time(0) NOT NULL
+,workingTime time(0) NOT NULL
+,contents VARCHAR(20) NOT NULL
+,note VARCHAR(20) NOT NULL
+,worktime date NOT NULL
+,uptime timestamp NOT NULL
+,deleteFlg integer NOT NULL
+,UNIQUE(id, user_id)
 );
 
  
