@@ -38,11 +38,17 @@
     <!-- Editable user database that can also be used by
          UserDatabaseRealm to authenticate users
     -->
-    <Resource name="UserDatabase" auth="Container"
+     <!-- <Resource name="UserDatabase" auth="Container"
               type="org.apache.catalina.UserDatabase"
               description="User database that can be updated and saved"
               factory="org.apache.catalina.users.MemoryUserDatabaseFactory"
               pathname="conf/tomcat-users.xml" />
+                  -->
+     <Resource name="jdbc/postgres" auth="Container"
+               type="javax.sql.DataSource" driverClassName="org.postgresql.Driver"
+               url="jdbc:postgresql://localhost:5432/postgres"
+               username="postgres" password="postgres" maxTotal="20" maxIdle="10" maxWaitMillis="-1"/>
+          
   </GlobalNamingResources>
 
   <!-- A "Service" is a collection of one or more "Connectors" that share
@@ -111,7 +117,7 @@
 
       <!-- Use the LockOutRealm to prevent attempts to guess user passwords
            via a brute-force attack -->
-      <Realm className="org.apache.catalina.realm.LockOutRealm">
+<!--       <Realm className="org.apache.catalina.realm.LockOutRealm"> -->
         <!-- This Realm uses the UserDatabase configured in the global JNDI
              resources under the key "UserDatabase".  Any edits
              that are performed against this UserDatabase are immediately
@@ -122,13 +128,13 @@
 -->
 
     <Realm className="org.apache.catalina.realm.JDBCRealm"
-               connectionName="myuser"
-               connectionPassword="mypass"
+               connectionName="postgres"
+               connectionPassword="postgres"
                connectionURL="jdbc:postgresql://localhost:5432/postgres"
                driverName="org.postgresql.Driver"
                roleNameCol="role"
                userCredCol="password"
-               userNameCol="user_id"
+               userNameCol="user_name"
                userRoleTable="UserRole"
                userTable="Users"
         />
