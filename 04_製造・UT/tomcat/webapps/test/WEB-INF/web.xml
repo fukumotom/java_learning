@@ -13,9 +13,14 @@
             <url-pattern>/*</url-pattern>
         </web-resource-collection>
         <auth-constraint>
-            <role-name>admin</role-name>
+            <!-- 権限なし -->
+            <role-name>*</role-name>
         </auth-constraint>
     </security-constraint>
+    <!-- roleの定義 -->
+    <security-role>
+        <role-name>admin</role-name>
+    </security-role>
     
     <!-- form認証設定 -->
     <login-config>
