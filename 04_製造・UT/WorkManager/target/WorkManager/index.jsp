@@ -1,5 +1,10 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<!DOCTYPE html>
 <html>
-<body>
-<p>ようこそ</p>
-</body>
+	<head>
+		<meta charset="UTF-8" >
+	</head>
+	<body>
+		<p>ようこそ</p>
+	</body>
 </html>

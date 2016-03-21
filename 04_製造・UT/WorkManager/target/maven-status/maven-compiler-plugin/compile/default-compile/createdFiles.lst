@@ -2,3 +2,4 @@ jp\co\ojt\servlet\SampleServlet.class
 jp\co\ojt\servlet\TaskRedirectServlet.class
 jp\co\ojt\servlet\TaskFowardServlet.class
 jp\co\ojt\servlet\LogoutServlet.class
+jp\co\ojt\form\UserRegisterForm.class
