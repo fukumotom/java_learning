@@ -12,7 +12,7 @@ user_id serial NOT NULL
 create table UserRole
 (
 user_name VARCHAR(20) NOT NULL REFERENCES Users(user_name)
-,role VARCHAR(5) NOT NULL
+,role VARCHAR(20) NOT NULL
 );
 
 create table WorkManage
