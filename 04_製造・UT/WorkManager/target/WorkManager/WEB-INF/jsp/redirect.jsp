@@ -3,8 +3,10 @@
 <html>
 	<head>
 		<meta charset="UTF-8" >
+		<title>redirect Sample</title>
 	</head>
 	<body>
-		<p>ようこそ</p>
+		<h1>redirect Sample</h1>
+		<p>This page is redirect Sample</p>
 	</body>
 </html>
