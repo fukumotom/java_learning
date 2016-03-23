@@ -2,7 +2,7 @@
 <html>
 	<body>
 		<title>ログイン画面</title>
-		<% if("true".equals(request.getParameter("error"))) {%><li>ID または PW が違います。</li><%} %>
+		<% if("true".equals(request.getParameter("error"))) {%><p>ID または PW が違います。</pli><%} %>
 		<h2>ユーザ情報を入力してください。</h2>
 		<form method="post" action="j_security_check">
 			<table>
@@ -18,7 +18,7 @@
 				</tr>
 			</table>
 		</form>
-		<form method="post" action="WEB-INF/jsp/USerRegistForm.jsp">
+		<form method="get" action="/WorkManager/RegisterForm">
 			<input type="submit" value="ユーザ新規登録">
 		</form>
     </body>

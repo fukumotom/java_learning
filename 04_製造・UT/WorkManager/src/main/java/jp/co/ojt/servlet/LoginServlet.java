@@ -8,15 +8,24 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 public class LoginServlet extends HttpServlet {
+
+	protected static Logger logger = LoggerFactory.getLogger(LoginServlet.class);
 
 	private static final long serialVersionUID = -1971958283532858214L;
 
-	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	public void doGet(HttpServletRequest request, HttpServletResponse response) {
 
-		System.out.println(request.getParameter("submit"));
-		
+		logger.info("parameter: " + request.getParameter("submit"));
+
 		RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/jsp/Menu.jsp");
-		dispatcher.forward(request, response);
+		try {
+			dispatcher.forward(request, response);
+		} catch (ServletException | IOException e) {
+			logger.error("フォワード失敗", e);
+		}
 	}
 }

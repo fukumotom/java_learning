@@ -30,11 +30,17 @@
 				<version>2.2</version>
 				<configuration>
 					<path>/${project.build.finalName}</path>
-					<server>tomcat-localhost</server>
-					<url>http://localhost:8080/manager/html</url>
-					<username>user1</username>
-					<password>tomcat1</password>
+					<url>http://localhost:8080/manager/text</url>
+					<username>tomcat</username>
+					<password>tomcat</password>
 				</configuration>
+				<dependencies>
+					<dependency>
+						<groupId>org.apache.tomcat.maven</groupId>
+						<artifactId>tomcat-maven-plugin</artifactId>
+						<version>2.2</version>
+					</dependency>
+				</dependencies>
 
 			</plugin>
 		</plugins>
@@ -52,7 +58,26 @@
 			<artifactId>tomcat-catalina</artifactId>
 			<version>8.0.32</version>
 		</dependency>
-
+		<dependency>
+			<groupId>org.apache.tomcat.maven</groupId>
+			<artifactId>tomcat7-maven-plugin</artifactId>
+			<version>2.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.7.19</version>
+		</dependency>
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-core</artifactId>
+			<version>1.1.6</version>
+		</dependency>
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-classic</artifactId>
+			<version>1.1.6</version>
+		</dependency>
 	</dependencies>
 
 	<repositories>
