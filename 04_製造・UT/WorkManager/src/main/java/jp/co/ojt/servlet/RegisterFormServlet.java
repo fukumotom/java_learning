@@ -21,7 +21,7 @@ public class RegisterFormServlet extends HttpServlet {
 	public void doGet(HttpServletRequest request, HttpServletResponse response) {
 
 		// ユーザ登録フォームを表示
-		RequestDispatcher dispacher = request.getRequestDispatcher("/WEB-INF/jsp/userRegistForm.jsp");
+		RequestDispatcher dispacher = request.getRequestDispatcher("/WEB-INF/jsp/user/userRegistForm.jsp");
 		try {
 			dispacher.forward(request, response);
 		} catch (ServletException | IOException e) {

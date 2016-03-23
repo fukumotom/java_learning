@@ -24,7 +24,7 @@ public class LogoutServlet extends HttpServlet {
 		logger.info("session削除しました。" + request.getUserPrincipal().getName());
 
 		try {
-			response.sendRedirect("/WorkManager/SampleServlet");
+			response.sendRedirect("/WorkManager/Login");
 		} catch (IOException e) {
 			logger.error("redirect失敗:", e);
 		}

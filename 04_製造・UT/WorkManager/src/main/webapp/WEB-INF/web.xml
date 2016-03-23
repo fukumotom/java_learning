@@ -15,6 +15,15 @@
 	</servlet-mapping>
 
 	<servlet>
+		<servlet-name>loginServlet</servlet-name>
+		<servlet-class>jp.co.ojt.servlet.LoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>loginServlet</servlet-name>
+		<url-pattern>/Login</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
 		<servlet-name>dispatcherServlet_re</servlet-name>
 		<servlet-class>jp.co.ojt.servlet.TaskRedirectServlet</servlet-class>
 	</servlet>
@@ -54,12 +63,21 @@
 	<security-constraint>
 		<web-resource-collection>
 			<web-resource-name>Authentication of FormAuth</web-resource-name>
+			<url-pattern>/WEB-INF/jsp/user/*</url-pattern>
+		</web-resource-collection>
+		<auth-constraint>
+		</auth-constraint>
+	</security-constraint>
+	<security-constraint>
+		<web-resource-collection>
+			<web-resource-name>Authentication of FormAuth</web-resource-name>
 			<url-pattern>/*</url-pattern>
 		</web-resource-collection>
 		<auth-constraint>
 			<role-name>admin</role-name>
 		</auth-constraint>
 	</security-constraint>
+
 
 	<!-- form認証設定 -->
 	<login-config>

@@ -17,11 +17,12 @@ public class LoginServlet extends HttpServlet {
 
 	private static final long serialVersionUID = -1971958283532858214L;
 
+	@Override
 	public void doGet(HttpServletRequest request, HttpServletResponse response) {
 
 		logger.info("parameter: " + request.getParameter("submit"));
 
-		RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/jsp/Menu.jsp");
+		RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/jsp/menu.jsp");
 		try {
 			dispatcher.forward(request, response);
 		} catch (ServletException | IOException e) {
