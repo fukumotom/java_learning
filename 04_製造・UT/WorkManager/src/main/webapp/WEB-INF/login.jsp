@@ -10,7 +10,7 @@
 					<td>ユーザ名：</td><td><input type="text" name="j_username"></td>
 				</tr>
 				<tr>
-					<td>パスワード：</td><td><input type="text" name="j_password"></td>
+					<td>パスワード：</td><td><input type="password" name="j_password"></td>
 				</tr>
 	
 				<tr>

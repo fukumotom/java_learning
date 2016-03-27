@@ -18,7 +18,7 @@
 				<td>パスワード確認：</td><td><input type="text" name="userName"></td>
 			</tr>
 			<tr>
-				<td><a href="/WorkManager/Login"><input type="button" value="戻る"></a></td><td><input type="submit" name="確認"></td>
+				<td><a href="/WorkManager/Menu"><input type="button" value="戻る"></a></td><td><input type="submit" name="確認"></td>
 			</tr>
 		</table>
 		</form>
