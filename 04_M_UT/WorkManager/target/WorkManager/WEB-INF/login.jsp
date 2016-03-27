@@ -18,8 +18,8 @@
 				</tr>
 			</table>
 		</form>
-		<form method="get" action="/WorkManager/RegisterForm">
-			<input type="submit" value="ユーザ新規登録">
-		</form>
+		<a href="/WorkManager/RegisterForm">
+			<input type="button" value="ユーザ新規登録">
+		</a>
     </body>
 </html>

@@ -1,8 +1,22 @@
-package jp.co.ojt.form;
+package jp.co.ojt.model;
 
-public class UserRegisterForm {
-	
+public class User {
+
+	private int userId;
+
 	private String userName;
+
+	private String password;
+
+	private String confirmPassword;
+
+	public int getUserId() {
+		return userId;
+	}
+
+	public void setUserId(int userId) {
+		this.userId = userId;
+	}
 
 	public String getUserName() {
 		return userName;
@@ -27,10 +41,5 @@ public class UserRegisterForm {
 	public void setConfirmPassword(String confirmPassword) {
 		this.confirmPassword = confirmPassword;
 	}
-
-	private String password;
-	
-	private String confirmPassword;
-	
 
 }
