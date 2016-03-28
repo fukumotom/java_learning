@@ -1,8 +1,0 @@
-jp\co\ojt\model\User.class
-jp\co\ojt\servlet\TaskRedirectServlet.class
-jp\co\ojt\logic\UserRegistLogic.class
-jp\co\ojt\servlet\MenuServlet.class
-jp\co\ojt\servlet\UserRegister.class
-jp\co\ojt\servlet\LogoutServlet.class
-jp\co\ojt\servlet\SampleServlet.class
-jp\co\ojt\servlet\TaskFowardServlet.class
