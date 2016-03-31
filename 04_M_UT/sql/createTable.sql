@@ -6,7 +6,7 @@ create table Users
 (
 user_id serial NOT NULL
 ,user_name VARCHAR(20) NOT NULL PRIMARY KEY
-,password VARCHAR(20) NOT NULL
+,password VARCHAR(64) NOT NULL
 );
 
 create table UserRole
