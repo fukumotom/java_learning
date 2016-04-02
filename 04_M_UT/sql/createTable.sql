@@ -1,5 +1,5 @@
 drop table WorkManage;
-drop table UserRole;
+drop table Role;
 drop table Users;
 
 create table Users
@@ -9,7 +9,7 @@ user_id serial NOT NULL
 ,password VARCHAR(64) NOT NULL
 );
 
-create table UserRole
+create table Role
 (
 user_name VARCHAR(20) NOT NULL REFERENCES Users(user_name)
 ,role VARCHAR(20) NOT NULL

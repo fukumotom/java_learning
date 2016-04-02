@@ -4688,14 +4688,5 @@
         <welcome-file>index.htm</welcome-file>
         <welcome-file>index.jsp</welcome-file>
     </welcome-file-list>
-    
-    <!-- form認証設定 -->
-    <login-config>
-        <auth-method>FORM</auth-method>
-        <form-login-config>
-            <form-login-page>/WEB-INF/login.jsp</form-login-page>
-            <form-error-page>/WEB-INF/login.jsp?error=true</form-error-page>
-        </form-login-config>
-    </login-config>
 
 </web-app>

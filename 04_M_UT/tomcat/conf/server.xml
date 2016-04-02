@@ -135,8 +135,9 @@
                roleNameCol="role"
                userCredCol="password"
                userNameCol="user_name"
-               userRoleTable="UserRole"
+               userRoleTable="Role"
                userTable="Users"
+               digest="SHA-256"
         />
 
       <Host name="localhost"  appBase="webapps"
