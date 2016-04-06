@@ -4,7 +4,7 @@ drop table Users;
 
 create table Users
 (
-,user_name VARCHAR(20) NOT NULL PRIMARY KEY
+user_name VARCHAR(20) NOT NULL PRIMARY KEY
 ,password VARCHAR(64) NOT NULL
 );
 
@@ -25,8 +25,10 @@ id serial NOT NULL
 ,note VARCHAR(20) NOT NULL
 ,worktime date NOT NULL
 ,uptime timestamp NOT NULL
+,insertFlg integer NOT NULL
+,updateFlg integer NOT NULL
 ,deleteFlg integer NOT NULL
-,UNIQUE(id, user_id)
+,UNIQUE(id, user_name)
 );
 
  
