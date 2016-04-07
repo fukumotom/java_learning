@@ -35,7 +35,7 @@
     -->
    
     <Resource
-        name="jdbc/ds"
+        name="jdbc/postgres"
         auth="Container"
         type="javax.sql.DataSource"
         driverClassName="org.postgresql.Driver"
@@ -45,7 +45,7 @@
         userTable="Users"
         userNameCol="user_id"
         userCredCol="password"
-        userRoleTable="UserRole"
+        userRoleTable="Role"
         roleNameCol="role"
         validationQuery="select 1"
         maxActive="20"

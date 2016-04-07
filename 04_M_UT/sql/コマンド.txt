@@ -1,11 +1,3 @@
 psql -U postgres -d postgres
 
 psql -f ysqlƒtƒ@ƒCƒ‹z -U postgres -d postgres
-
-insert into Users values(nextval('Users_user_id_seq'), 'admin', 'admin');
-insert into Users values(nextval('Users_user_id_seq'), 'tomcat', 'tomcat');
-insert into Users values(nextval('Users_user_id_seq'), 'user1', 'password1');
-
-insert into UserRole values('admin', 'manager-gui');
-insert into UserRole values('tomcat', 'manager-script');
-insert into UserRole values('user1', 'admin');
