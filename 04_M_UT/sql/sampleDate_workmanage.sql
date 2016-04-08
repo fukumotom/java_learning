@@ -5,7 +5,7 @@ INSERT INTO WorkManage(
 	,workingTime
 	,contents
 	,note
-	,worktime
+	,workDate
 	,uptime
 	,deleteFlg
 	,insertFlg
@@ -32,7 +32,7 @@ INSERT INTO WorkManage(
 	,workingTime
 	,contents
 	,note
-	,worktime
+	,workDate
 	,uptime
 	,deleteFlg
 	,insertFlg
@@ -59,7 +59,7 @@ INSERT INTO WorkManage(
 	,workingTime
 	,contents
 	,note
-	,worktime
+	,workDate
 	,uptime
 	,deleteFlg
 	,insertFlg

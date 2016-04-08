@@ -23,7 +23,7 @@ id serial NOT NULL
 ,workingTime time(0) NOT NULL
 ,contents VARCHAR(20) NOT NULL
 ,note VARCHAR(20) NOT NULL
-,worktime date NOT NULL
+,workDate date NOT NULL
 ,uptime timestamp NOT NULL
 ,insertFlg integer NOT NULL
 ,updateFlg integer NOT NULL
