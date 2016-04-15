@@ -1,15 +1,43 @@
 INSERT INTO WorkManage(
 	user_name
-	,startTime
-	,endTime
-	,workingTime
+	,start_time
+	,end_time
+	,working_time
 	,contents
 	,note
-	,workDate
+	,work_date
 	,uptime
-	,deleteFlg
-	,insertFlg
-	,updateFlg
+	,insert_flg
+	,update_flg
+	,delete_flg
+
+) VALUES (
+
+	'user1'
+	,'00:00:00'
+	,'11:00:00'
+	,'11:00:00'
+	,'サンプル内容０'
+	,'サンプルメモ０'
+	,'2016-03-05'
+	,TIMESTAMP '2016-03-05 00:00:00'
+	,0
+	,0
+	,1
+);
+
+INSERT INTO WorkManage(
+	user_name
+	,start_time
+	,end_time
+	,working_time
+	,contents
+	,note
+	,work_date
+	,uptime
+	,insert_flg
+	,update_flg
+	,delete_flg
 
 ) VALUES (
 
@@ -27,16 +55,16 @@ INSERT INTO WorkManage(
 );
 INSERT INTO WorkManage(
 	user_name
-	,startTime
-	,endTime
-	,workingTime
+	,start_time
+	,end_time
+	,working_time
 	,contents
 	,note
-	,workDate
+	,work_date
 	,uptime
-	,deleteFlg
-	,insertFlg
-	,updateFlg
+	,insert_flg
+	,update_flg
+	,delete_flg
 
 ) VALUES (
 
@@ -54,16 +82,16 @@ INSERT INTO WorkManage(
 );
 INSERT INTO WorkManage(
 	user_name
-	,startTime
-	,endTime
-	,workingTime
+	,start_time
+	,end_time
+	,working_time
 	,contents
 	,note
-	,workDate
+	,work_date
 	,uptime
-	,deleteFlg
-	,insertFlg
-	,updateFlg
+	,insert_flg
+	,update_flg
+	,delete_flg
 
 ) VALUES (
 

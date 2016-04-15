@@ -18,16 +18,16 @@ create table WorkManage
 (
 id serial NOT NULL
 ,user_name VARCHAR(20) NOT NULL
-,startTime time(0) NOT NULL
-,endTime time(0) NOT NULL
-,workingTime time(0) NOT NULL
+,start_time time(0) NOT NULL
+,end_time time(0) NOT NULL
+,working_time time(0) NOT NULL
 ,contents VARCHAR(20) NOT NULL
 ,note VARCHAR(20) NOT NULL
-,workDate date NOT NULL
+,work_date date NOT NULL
 ,uptime timestamp NOT NULL
-,insertFlg integer NOT NULL
-,updateFlg integer NOT NULL
-,deleteFlg integer NOT NULL
+,insert_flg integer NOT NULL
+,update_flg integer NOT NULL
+,delete_flg integer NOT NULL
 ,UNIQUE(id, user_name)
 );
 
